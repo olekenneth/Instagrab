@@ -237,9 +237,9 @@ EOF;
 		if(isset($hashtag) && trim($hashtag) != "" && preg_match("/[a-zA-Z0-9_\-]+/i", $hashtag)) {
 			if (empty($this->client_id)) {
 				$access_token = $this->instagrabLogin();
-				$apiurl = "https://api.instagram.com/v1/tags/".$hashtag."/media/recent?access_token=" . $access_token;
+				$apiurl = "https://api.instagram.com/v1/tags/".trim($hashtag)."/media/recent?access_token=" . $access_token;
 			} else {
-				$apiurl = "https://api.instagram.com/v1/tags/".$hashtag."/media/recent?client_id=" . $this->client_id;
+				$apiurl = "https://api.instagram.com/v1/tags/".trim($hashtag)."/media/recent?client_id=" . $this->client_id;
 			}
 		}
 

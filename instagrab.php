@@ -2,7 +2,7 @@
 /*
 	Plugin Name: Instagrab
 	Plugin URI: http://instagrab.org
-	Description: Instagrab is a Wordpress plugin that grabs images from one or more Instagram hashtags and create a post for each image.
+	Description: Instagrab is a Wordpress plugin that grabs images from one or more Instagram hashtags and creates a post for each image.
 	Version: 2.0
 	Author: Ole-Kenneth Rangnes
 	Author URI: http://olekenneth.com
@@ -145,7 +145,7 @@ class instagrab {
 			<input type="number" name="<?php echo $this->prefix . "timeout"; ?>" value="<?php echo $this->timeout; ?>"/> (sec)
 			</p>
 
-			<h3>Autentification</h3>
+			<h3>Authentification</h3>
 			<h4>Use an account to access Instagram API</h4>
 			<p><?php _e("Instagram username:", 'instagrab' ); ?>
 			<input type="text" name="<?php echo $this->prefix . "username"; ?>" value="<?php echo $username; ?>"/>
@@ -153,7 +153,7 @@ class instagrab {
 			<p><?php _e("Instagram password:", 'instagrab' ); ?>
 			<input type="password" name="<?php echo $this->prefix . "password"; ?>" value="<?php echo $password; ?>"/>
 			</p>
-			<h4>Or use client id from to access Instagram API (don't use both)</h4>
+			<h4>Or use client id from Instagram to access Instagram API (don't use both)</h4>
 			<p><?php _e("Client id:", 'instagrab' ); ?>
 			<input type="text" name="<?php echo $this->prefix . "client_id"; ?>" value="<?php echo $this->client_id; ?>"/>
 			</p>			
